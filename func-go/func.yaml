@@ -1,5 +1,5 @@
 specVersion: 0.35.0
-name: eugenio
+name: hello-go
 runtime: go
 registry: ""
 image: ""
@@ -9,3 +9,11 @@ build:
   - paketo-buildpacks/go-dist
   - ghcr.io/boson-project/go-function-buildpack:tip
   pvcSize: 256Mi
+
+envs:
+  - name: EXAMPLE1
+    value: value
+
+buildEnvs:
+  - name: EXAMPLE1
+    value: one

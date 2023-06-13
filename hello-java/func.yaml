@@ -18,3 +18,12 @@ build:
   - name: S2I_SOURCE_DEPLOYMENTS_FILTER
     value: lib quarkus-run.jar app quarkus
   pvcSize: 256Mi
+
+
+envs:
+  - name: EXAMPLE2
+    value: value2
+
+buildEnvs:
+  - name: EXAMPLE2
+    value: two
